@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary-color: #343a40;
+        --primary-color-dark: #1e2124;
+        --text-dark: #111827;
+        --text-light: #6b7280;
+        --white: #ffffff;
+      }
+
+      .btn {
+        padding: 1rem 2rem;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        color: var(--white);
+        background-color: var(--primary-color);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background-color: var(--primary-color-dark);
+      }
+
+      .btn-secondary {
+        background-color: var(--primary-color-dark);
+        color: var(--white);
+      }
+
+      .btn-secondary:hover {
+        background-color: var(--primary-color);
+      }
+
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      nav {
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .nav__logo {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+
+      .nav__links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .link a {
+        text-decoration: none;
+        color: var(--text-light);
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .link a:hover {
+        color: var(--primary-color);
+      }
+
+      .header {
+        padding: 0 1rem;
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .content h1 {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--text-dark);
+      }
+
+      .content h1 span {
+        font-weight: 400;
+      }
+
+      .content p {
+        margin-bottom: 2rem;
+        color: var(--text-light);
+        line-height: 1.75rem;
+      }
+
+      .image {
+        position: relative;
+        text-align: center;
+        isolation: isolate;
+      }
+
+      .image__bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 450px;
+        width: 450px;
+        background-color: var(--primary-color);
+        border-radius: 100%;
+        z-index: -1;
+      }
+
+      .image img {
+        width: 100%;
+        max-width: 475px;
+      }
+
+      .image__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-align: left;
+        background-color: var(--white);
+        border-radius: 5px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .image__content__1 {
+        transform: translate(calc(-50% - 12rem), calc(-50% - 8rem));
+      }
+
+      .image__content__1 span {
+        padding: 10px 12px;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        background-color: #defcf4;
+        border-radius: 100%;
+      }
+
+      .image__content__1 h4 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--text-dark);
+      }
+
+      .image__content__1 p {
+        color: var(--text-light);
+      }
+
+      .image__content__2 {
+        transform: translate(calc(-50% + 8rem), calc(-50% + 10rem));
+      }
+
+      .image__content__2 ul {
+        list-style: none;
+        display: grid;
+        gap: 1rem;
+      }
+
+      .image__content__2 li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+        color: var(--text-light);
+      }
+
+      .image__content__2 span {
+        font-size: 1.5rem;
+        color: var(--primary-color);
+      }
+
+      .address {
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      .address__content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .address__box {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: #fff;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        margin-top: auto; 
+      }
+    </style>
+    <title>RS Sehat Bahagia - Address</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img
+          src="assets/rssehatbahagia.png"
+          alt="Logo"
+          style="width: 180px; height: auto; margin-right: 10px;"
+        />
+        <ul class="nav__links">
+          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="about.html">About</a></li>
+          <li class="link"><a href="address.html">Address</a></li>
+          <li class="link"><a href="#">Contact</a></li>
+        </ul>
+        <button class="btn">Sistem Informasi</button>
+      </nav>
+      <header class="header">
+        <img src="assets/header-bg.png" alt="header image" />
+      </header>
+      <section class="address">
+        <div class="address__content">
+          <h2>Visit Our Location</h2>
+          <div class="address__box">
+            <p>
+              RS Sehat Bahagia is conveniently located to serve you. Visit us at:
+            </p>
+            <address>
+              Jl. Kesehatan No. 123, Kota Sehat, Indonesia
+            </address>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="footer">
+      &copy; 2024 RS Sehat Bahagia. All rights reserved.
+    </div>
+  </body>
+</html>

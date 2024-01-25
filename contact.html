@@ -225,6 +225,20 @@
         color: white;
         margin-top: auto;
       }
+
+      .header {
+        padding: 0 1rem;
+        flex: 1;
+        display: flex; /* Change display to flex */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center;
+      }
+
+      .header img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
     </style>
     <title>RS Sehat Bahagia - Contact Us</title>
   </head>
@@ -237,15 +251,15 @@
           style="width: 180px; height: auto; margin-right: 10px;"
         />
         <ul class="nav__links">
-          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="home.html">Home</a></li>
           <li class="link"><a href="about.html">About</a></li>
           <li class="link"><a href="address.html">Address</a></li>
-          <li class="link"><a href="#">Contact</a></li>
+          <li class="link"><a href="contact.html">Contact</a></li>
         </ul>
         <button class="btn">Sistem Informasi</button>
       </nav>
       <header class="header">
-        <img src="assets/header-bg.png" alt="header image" />
+        <img src="assets/rumahsakit.png" alt="header image" />
       </header>
       <section class="contact">
         <div class="contact__content">
@@ -257,7 +271,6 @@
             <address>
               Email: info@rssehatbahagia.com <br />
               Phone: +62 123 4567 890 <br />
-              Address: Jl. Kesehatan No. 123, Kota Sehat, Indonesia
             </address>
           </div>
         </section>
